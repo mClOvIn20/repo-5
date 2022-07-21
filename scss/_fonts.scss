@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2? family= Oswald:wght@300;400;500 & display=swap');
+
+//fonts
+$mainFont:'Oswald', sans-serif;
+$secondaryFont:'Oswald', sans-serif;
+
+//text sizing
+$textSm:.8em;
+$textMd:1.5em;
+$textLg:2em;
+$textXl:3em;
+
+//font - weight
+$bold:500;
+$regular:400;
+$light:300;
+
+
+//clases 
+.textDestacado{
+	background-color: black;
+}
+
+.textBold{
+	font-weight: $bold;
+}
+
+.textCenter{
+	text-align: center;
+}
+
+.textRight{
+	text-align: right;
+}
+
+.textLeft{
+	text-align: left;
+}

@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2? family= Oswald:wght@300;400;500 & display=swap');
+
+
+/* reset */
+*{
+	font-family: 'Oswald', sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*selectores de etiqueta*/
+
+h1{
+	color:white;
+	font-size: 5rem;
+	text-align: center
+}
+
+h2{
+	color:papayawhip;
+	font-size: 3rem;
+}
+
+h3{
+	color:white;	
+	font-size: 2.5rem;
+}
+
+h4{
+	color:whitesmoke;
+	font-size: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4{
+	font-family: 'Oswald', sans-serif;
+	color: white;
+}
+html{
+	font-family: 'Oswald', sans-serif;
+	font-size: 62.5%;
+}
+
+body{
+	background-image: url(../img/fondo.jpg);
+	background-attachment: fixed;
+
+}
+
+/*  MOBILE FIRST  */
+
+.contenedor{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"nav" 
+		"header" 
+		"nosotros" 
+		"productos" 
+		"tarjetas"
+		"map" 
+		"footer";
+}
+#nav{
+	grid-area: nav;
+}
+
+#header{
+	grid-area: header;
+
+}
+
+#nosotros{
+	grid-area: nosotros;
+
+}
+
+#productos{
+	grid-area: prod;
+
+}
+
+#comollegar{
+	grid-area: map;
+
+}
+
+#footer{
+	grid-area: footer;
+
+}
+#aside{
+	grid-area: tarjetas;
+
+}
+
+
+	.nav{
+		background-color: rgba(90, 60, 80, .8)b;;
+		position:relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		margin: auto;
+		padding: 10px 10px;
+		display: flex;
+		justify-content: center;
+		align-items:center ;
+		}
+
+	.nav a img{
+		margin: 0 15px;
+		width: 50px;
+		height: auto;
+	}
+
+	.nav ul{
+		display: flex;
+	}
+	
+		.nav ul li{
+			list-style: none;
+			margin: 0 5px;
+			padding: 20px;
+		}
+	
+	.nav ul li a{
+		color: white;
+		text-decoration: none;
+		font-size: 2rem;
+		background-image: linear-gradient(currentColor, currentColor);
+		background-position: 0% 100%;
+		background-repeat: no-repeat;
+		background-size: 0% 2px;
+		transition: background-size .5s;
+		}	
+	.nav ul li a:hover{
+		color:#C9FE6C;
+		font-weight: 800;
+		font-size: 2.2rem;
+		background-size: 100% 2px;
+		}
+		.nav ul li a header a img{
+			width:140px;
+			height: 100px;
+			margin:50px;
+		}
+		.nav a header a img{
+			width: 100px;
+			height: 100px;
+						margin:50px;
+
+		}
+	/* clases de texto */
+
+.text-bold{
+	font-weight: 500;
+}
+
+.text-light{
+	font-weight: 300;
+}
+
+.text-regular{
+	font-weight: 400;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.text-right{
+	text-align: right;
+}
+
+/* clases para width */
+.w-25{
+	width: 25%;
+}
+
+.w-50{
+	width: 50%;
+}
+
+.w-75{
+	width: 75%;
+}	
+
+.w-100{
+	width: 100%;
+}
+
+.h-25{
+	height: 25%;
+}
+
+.h-300{
+	height: 300px;
+}	
+
+/*Clases BEM */
+
+.header{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+}
+
+.section__titulo{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		width: 90%;
+		height: auto;
+		margin: 40px auto;
+}
+
+.nosotros__section{
+		background-color:rgba(0, 0, 0, 0.5);
+		width: 95%;
+		height: auto;
+		margin: 50px auto;
+		padding: 20px 30px;
+		color:papayawhip;
+		font-size: 1.8rem;
+		font-family: 'Oswald', sans-serif;
+		line-height: 3rem;
+		border: double 5px ;
+		/*overflow-x: hidden;
+		overflow-y: auto;*/
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+}
+
+.promociones__section{
+		background-color:rgba(0, 0, 0, 0.5);
+		width: 70%;
+		height: auto;
+		margin: 40px auto;
+		padding: 10px 20px;
+		color:papayawhip;
+		font-size: 1.8rem;
+		font-family: 'Oswald', sans-serif;
+		line-height: 3.5rem;	
+		border: solid 5px ;
+		box-sizing: border-box;
+		text-align: center;
+}
+
+.productos__section{
+		background-color: rgba(0, 0, 0, 0.5);
+		width: 30%;
+		height: auto;
+		margin: 50px auto;
+		padding: 20px 30px;
+		border: double 5px ;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: center;
+		align-items: flex-start;
+}
+.productos .galeria{
+	margin: 40px auto;
+	display: flex;
+	flex-direction:column ;
+
+}
+	.productos .galeria figure{
+		text-align: center;
+	}
+		.productos .galeria figure img{
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+		.productos .galeria figure figcaption{
+			font-size: 2.5rem;
+			color: white;
+			padding: 15px 0;
+			background-color: ;
+		}
+		.productos .galeria p.price{
+			color: white;
+			padding-bottom: 15px;
+			background-color: ;
+		}
+
+
+
+.informacion__section{
+		color:;
+		font-size: 1.8rem; 
+		line-height: 4rem;
+		background-color:;
+		width: 65%;	
+		height: auto;
+		margin: 40px auto;
+		padding: 30px 30px;	
+		border: solid 5px ;
+		box-sizing: border-box;
+
+}
+.informacion .info{
+	margin: 40px auto;
+	flex-direction: column;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+}
+	.informacion .info fieldset {
+	text-align: left;
+}
+.informacion .info legend{
+		font-size: 2rem;
+		color: white;
+		padding: 10px 0;
+		background-color: ;
+
+} 
+.informacion .info option{
+	font-size:
+}
+.mapa__section1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.mapa__section{
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+}
+.tarjetas__section{
+	display: flex;
+	flex-direction: column;
+	width:20%;
+}
+
+
+.productos__icon{
+		width: 10px;
+		margin: 50px 50px;
+}
+
+.pie{
+		background-color:;
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		margin: 30px auto;
+		padding: 50px auto;
+		line-height: 3rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+}
+
+.pie__icon--sm{
+		width: 40px;
+		margin: 5px;
+		display: flex;
+		flex-direction: flex-star;
+		align-items:;
+}
+.promociones__section1{
+	display: flex;
+	justify-content: center;
+}
+
+/* media queries INDEX */
+
+@media (min-width: 768px){
+	.contenedor{
+		grid-template-columns: 60vw 40vw;
+		grid-template-rows: auto;
+		grid-template-areas:
+		"nav nav" 
+		"header header" 
+		"nosotros nosotros" 
+		"prod tarjetas" 
+		"footer footer";
+	}
+
+
+	.pie{
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	.pie h3{
+		font-size: 1.9rem;
+	}
+
+	.pie h4{
+		font-size: 1.6rem;
+	}
+
+	.pie__icon--sm{
+		width: 35px;
+	
+	}
+}
+@media (min-width: 1024px){
+	.contenedor{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas:
+		"nav nav nav" 
+		"header header header" 
+		"nosotros nosotros nosotros" 
+		"prod prod prod" 
+		"footer footer footer";
+	}
+
+	.nav{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.nosotros__section{
+		flex-direction: row;
+		justify-content: center;
+		justify-content: center;
+
+	}
+	.productos__section{
+		background-color: black;
+	}
+
+}
+
+@media (min-width: 1200px){
+
+	.nav{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.promociones__section{
+		width: 80%;
+		height: 350px;
+	}
+
+	.pie{
+		height: 150%;
+	}
+
+	.pie h3{
+		font-size: 2.4rem;
+	}
+
+	.pie h4{
+		font-size: 2.1rem;
+	}
+
+	.pie__icon--sm{
+		width: 45px;
+		margin: 0px;
+		padding: 0px;
+
+	}
+
+}
+/*animaciones*/
+/*@keyframes headerAnimation{
+	0%{background-image: url(../img/header.jpg);}
+	25%{background-image: url(../img/header2.jpg);}
+	50%{background-image: url(../img/header3.jpg);}
+	75%{background-image: url(../img/header4.jpg);}
+	95%{background-image: url(../img/header5.jpg);}
+}
+
+header{
+	height: 40vh;
+	animation-name: headerAnimation;
+	animation-duration: 4s;
+	animation-iteration-count:infinite ;
+	background-size: cover;
+	animation-timing-function: ease-in;
+
+}*/

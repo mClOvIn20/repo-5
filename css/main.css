@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2? family= Oswald:wght@300;400;500 & display=swap");
+.textDestacado {
+  background-color: black; }
+
+.textBold {
+  font-weight: 500; }
+
+.textCenter {
+  text-align: center; }
+
+.textRight {
+  text-align: right; }
+
+.textLeft {
+  text-align: left; }
+
+.botonera {
+  background-color: rgba(11, 12, 15, 0.7);
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .botonera img {
+    width: 150px; }
+    @media (min-width: 320px) and (max-width: 320px) {
+      .botonera img {
+        width: 100px; } }
+  .botonera ul {
+    display: flex; }
+    .botonera ul li {
+      list-style: none;
+      margin: 0 5px;
+      padding: 20px; }
+      .botonera ul li a {
+        font-family: "Oswald", sans-serif;
+        font-size: 2em;
+        text-decoration: none;
+        color: #0F0E0E; }
+        .botonera ul li a:hover {
+          color: white; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  margin: 10px 20px;
+  font-weight: 500; }
+
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.5em; }
+
+h5 {
+  font-size: 1,5rem;
+  color: white; }
+
+h6 {
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  font-size: rem; }
+
+p {
+  margin: 10px 20px;
+  font-family: "Oswald", sans-serif;
+  line-height: 1 em;
+  font-size: 1.5em;
+  color: #0F0E0E; }
+
+a {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif; }
+
+.bgLight {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white; }
+
+.bgWhite {
+  background-color: #F5F0F0; }
+
+.col {
+  color: white; }
+
+.btn-grey {
+  color: black;
+  background-color: white; }
+
+.god {
+  color: white;
+  background-color: black; }
+
+#productos h1, #productos h2 {
+  width: 30%;
+  height: auto;
+  font-size: 3rem;
+  padding: 20px 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: "Oswald", sans-serif;
+  margin: 50px auto; }
+
+#productos .galeria {
+  margin: 40px;
+  display: flex;
+  justify-content: column; }
+  #productos .galeria figure {
+    text-align: center; }
+    #productos .galeria figure img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      width: 100%; }
+    #productos .galeria figure figcaption {
+      font-size: 2.5rem;
+      color: white;
+      padding: 15px 0;
+      background-color: white; }
+  #productos .galeria p.price {
+    color: white;
+    padding-bottom: 15px;
+    background-color: white; }
+
+.pie {
+  /*padding*/
+  text-align: center;
+  padding: 50px auto;
+  height: 100%;
+  /****display flex****/
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .pie a {
+    text-decoration: none; }
+
+.pie__icon--sm {
+  /*size*/
+  width: 40px;
+  margin: 5px;
+  display: flex;
+  flex-direction: flex-star; }
+
+.pie__titulo--md {
+  font-size: 2rem; }

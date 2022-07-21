@@ -1,0 +1,26 @@
+.pie{
+	/*padding*/
+	text-align: center;
+	padding:50px auto;
+	height: 100%;
+	/****display flex****/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	a{
+		text-decoration: none;
+	}
+}
+
+
+.pie__icon--sm{
+	/*size*/
+	width: 40px;
+	margin: 5px;
+	display: flex;
+	flex-direction: flex-star;
+}
+
+.pie__titulo--md{
+	font-size: 2rem;
+}
