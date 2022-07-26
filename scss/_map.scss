@@ -1,0 +1,4 @@
+.mapa__section{
+		text-align: map-get($map:$posicion, $key:'uno');
+
+}

@@ -1,0 +1,44 @@
+// extends
+
+.nosotros__section {
+  background-color: $mainColor;
+  width: 95%;
+  height: auto;
+  margin: 40px auto;
+  padding: 20px 30px;
+  color: $white;
+  font-size: $textMd;
+  line-height: 3rem;
+  border: double 5px $mainColor;
+  box-sizing: border-box; 
+	
+}
+
+.promociones__section {
+	@extend .nosotros__section;
+	width: 80%;
+	padding: 10px 20px;
+	text-align: center;
+
+}
+
+.nosotros__section {
+  @extend .nosotros__section;
+  width: 50%;
+
+
+}
+//mixins
+
+@mixin titulos($size, $color){
+  font-size: $size;
+  color: $color;
+}
+
+//maps
+$posicion:(
+    'uno': center,
+    'dos': left,
+    'tres': right,
+    'cuatro': all,
+  );

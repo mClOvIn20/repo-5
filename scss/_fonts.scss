@@ -2,37 +2,41 @@
 
 //fonts
 $mainFont:'Oswald', sans-serif;
-$secondaryFont:'Oswald', sans-serif;
+
 
 //text sizing
-$textSm:.8em;
-$textMd:1.5em;
-$textLg:2em;
-$textXl:3em;
+$textSm:1.3rem;
+$textMd:2.5rem;
+$textLg:4rem;
+$textXl:6rem;
 
 //font - weight
 $bold:500;
 $regular:400;
 $light:300;
 
+//clases de texto 
 
-//clases 
-.textDestacado{
-	background-color: black;
-}
-
-.textBold{
+.text-bold{
 	font-weight: $bold;
 }
 
-.textCenter{
+.text-light{
+	font-weight: $light;
+}
+
+.text-regular{
+	font-weight: $regular;
+}
+
+.text-center{
 	text-align: center;
 }
 
-.textRight{
-	text-align: right;
+.text-left{
+	text-align: left;
 }
 
-.textLeft{
-	text-align: left;
+.text-right{
+	text-align: right;
 }

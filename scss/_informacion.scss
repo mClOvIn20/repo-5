@@ -1,0 +1,22 @@
+.informacion__section{
+		color:$white;
+		font-size: $textLg; 
+		line-height: 4rem;
+		background-color:$mainColor;
+		width: 65%;	
+		height: auto;
+		margin: 40px auto;
+		padding: 30px 30px;	
+		box-sizing: border-box;
+
+}
+
+.legend{
+	font-size: $textMd;
+	color: $secondaryColor;
+}
+.btn-grey{
+	color: black;
+	background-color:white ;
+
+}

@@ -3,25 +3,26 @@
 	padding:0;
 }
 
-h1,
-h2,
-h3{
-	font-family: $secondaryFont;
-	color:$keyColor;
-	margin: 10px 20px;
-	font-weight: $bold;
+html{
+	font-size: 62.5%;
+	font-family: $mainFont; 
 }
 
 h1{
-	font-size: $textXl;
+	@include titulos($textXl, $secondaryColor);
+	text-align: center;
 }
 
 h2{
-	font-size: $textLg;
+	@include titulos($textLg, $secondaryColor);
 }
 
 h3{
-	font-size: $textMd;
+	@include titulos($textMd, $secondaryColor);
+}
+
+h4{
+	@include titulos($textMd, $secondaryColor);
 }
 h5{
 	font-size: 1,5rem;
@@ -33,43 +34,21 @@ h6{
 	font-size:rem;
 }
 p{
-	margin: 10px 20px;
-	font-family: $mainFont;
-	line-height: 1 em;
-	font-size: $textMd;
-	color:$black;
+	color: grey;
+	font-size:1.5rem;
 }
-
 a{
-	color:$keyColor;
-	font-size: $textMd;
-	text-decoration: none;
-	font-family: $mainFont;
-}
-
-//backgrounds 
-.bgLight{
-	background-color:$mainColor;
 	color: white;
-}
-
-.bgWhite{
-	background-color:$white;
-}
-
-.col{
-	color: white;
-}
-
-.btn-grey{
-	color: black;
-	background-color:white ;
-
-}
-.god{
-	color: white;
-	background-color:black ;
+	font-size:1.5rem;
 
 }
 
+li{
+	font-size:$textSm;
+}
+
+body{
+	background-image: url(../img/fondo.jpg);
+	font-size:1rem;
 	
+}

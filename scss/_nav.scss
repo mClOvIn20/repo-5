@@ -1,0 +1,45 @@
+//nesting - anidación
+.nav{
+		background-color:$mainColor;
+		top: 0;
+		left: 0;
+		width: 100%;
+		margin: auto;
+		padding: 10px 10px;
+
+    img{
+		margin: 35px;
+		width: 60px;
+		height: auto;
+		}	
+
+		li{
+				font-size:$textLg;
+				list-style: none;
+				margin: 0 5px;
+				padding: 20px;
+			
+			a{
+					color: $white;
+					font-size: $textLg;
+					background-image: linear-gradient(currentColor, currentColor);
+					background-position: 0% 100%;
+					 background-size: 0% 2px;
+					transition: background-size .5s;
+				
+				&:hover{
+						color: $secondaryColor;
+						font-weight: $regular;
+						background-size: 100% 2px;
+				}
+			}
+		}
+	}
+
+.header{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+}
