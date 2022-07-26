@@ -1,64 +1,71 @@
 @import url("https://fonts.googleapis.com/css2? family= Oswald:wght@300;400;500 & display=swap");
-.textDestacado {
-  background-color: black; }
+.section__titulo {
+  width: 90px;
+  height: auto;
+  margin: 40px auto; }
 
-.textBold {
+.text-bold {
   font-weight: 500; }
 
-.textCenter {
+.text-light {
+  font-weight: 300; }
+
+.text-regular {
+  font-weight: 400; }
+
+.text-center {
   text-align: center; }
 
-.textRight {
-  text-align: right; }
-
-.textLeft {
+.text-left {
   text-align: left; }
 
-.botonera {
-  background-color: rgba(11, 12, 15, 0.7);
-  padding: 10px 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .botonera img {
-    width: 150px; }
-    @media (min-width: 320px) and (max-width: 320px) {
-      .botonera img {
-        width: 100px; } }
-  .botonera ul {
-    display: flex; }
-    .botonera ul li {
-      list-style: none;
-      margin: 0 5px;
-      padding: 20px; }
-      .botonera ul li a {
-        font-family: "Oswald", sans-serif;
-        font-size: 2em;
-        text-decoration: none;
-        color: #0F0E0E; }
-        .botonera ul li a:hover {
-          color: white; }
+.text-right {
+  text-align: right; }
+
+.promociones__section, .nosotros__section {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 95%;
+  height: auto;
+  margin: 40px auto;
+  padding: 20px 30px;
+  color: #E6E6E6;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  border: double 5px rgba(255, 255, 255, 0.5);
+  box-sizing: border-box; }
+
+.promociones__section {
+  width: 80%;
+  padding: 10px 20px;
+  text-align: center; }
+
+.promociones__section, .nosotros__section {
+  width: 50%; }
 
 * {
   margin: 0;
   padding: 0; }
 
-h1,
-h2,
-h3 {
-  font-family: "Oswald", sans-serif;
-  color: white;
-  margin: 10px 20px;
-  font-weight: 500; }
+html {
+  font-size: 62.5%;
+  font-family: "Oswald", sans-serif; }
 
 h1 {
-  font-size: 3em; }
+  font-size: 6rem;
+  color: rgba(11, 12, 15, 0.7);
+  text-align: center; }
 
 h2 {
-  font-size: 2em; }
+  font-size: 4rem;
+  color: rgba(11, 12, 15, 0.7); }
 
 h3 {
-  font-size: 1.5em; }
+  font-size: 2.5rem;
+  color: rgba(11, 12, 15, 0.7); }
+
+h4 {
+  font-size: 2.5rem;
+  color: rgba(11, 12, 15, 0.7); }
 
 h5 {
   font-size: 1,5rem;
@@ -70,83 +77,130 @@ h6 {
   font-size: rem; }
 
 p {
-  margin: 10px 20px;
-  font-family: "Oswald", sans-serif;
-  line-height: 1 em;
-  font-size: 1.5em;
-  color: #0F0E0E; }
+  color: grey;
+  font-size: 1.5rem; }
 
 a {
   color: white;
-  font-size: 1.5em;
-  text-decoration: none;
-  font-family: "Oswald", sans-serif; }
+  font-size: 1.5rem; }
 
-.bgLight {
+li {
+  font-size: 1.3rem; }
+
+body {
+  background-image: url(../img/fondo.jpg);
+  font-size: 1rem; }
+
+.nav {
   background-color: rgba(255, 255, 255, 0.5);
-  color: white; }
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  padding: 10px 10px; }
+  .nav img {
+    margin: 35px;
+    width: 60px;
+    height: auto; }
+  .nav li {
+    font-size: 4rem;
+    list-style: none;
+    margin: 0 5px;
+    padding: 20px; }
+    .nav li a {
+      color: #E6E6E6;
+      font-size: 4rem;
+      background-image: linear-gradient(currentColor, currentColor);
+      background-position: 0% 100%;
+      background-size: 0% 2px;
+      transition: background-size .5s; }
+      .nav li a:hover {
+        color: rgba(11, 12, 15, 0.7);
+        font-weight: 400;
+        background-size: 100% 2px; }
 
-.bgWhite {
-  background-color: #F5F0F0; }
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw; }
 
-.col {
-  color: white; }
+.nosotros__icon {
+  width: 100px;
+  margin: 50px 50px; }
+
+.btn-white {
+  font-size: 1.4rem;
+  color: black; }
+
+.promociones__section {
+  text-align: center; }
+
+.mapa__section {
+  text-align: center; }
+
+.informacion__section {
+  color: #E6E6E6;
+  font-size: 4rem;
+  line-height: 4rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 65%;
+  height: auto;
+  margin: 40px auto;
+  padding: 30px 30px;
+  box-sizing: border-box; }
+
+.legend {
+  font-size: 2.5rem;
+  color: rgba(11, 12, 15, 0.7); }
 
 .btn-grey {
   color: black;
   background-color: white; }
 
-.god {
-  color: white;
-  background-color: black; }
-
-#productos h1, #productos h2 {
-  width: 30%;
-  height: auto;
-  font-size: 3rem;
-  padding: 20px 30px;
-  background-color: rgba(255, 255, 255, 0.7);
-  font-family: "Oswald", sans-serif;
-  margin: 50px auto; }
-
-#productos .galeria {
-  margin: 40px;
-  display: flex;
-  justify-content: column; }
-  #productos .galeria figure {
-    text-align: center; }
-    #productos .galeria figure img {
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-      width: 100%; }
-    #productos .galeria figure figcaption {
-      font-size: 2.5rem;
-      color: white;
-      padding: 15px 0;
-      background-color: white; }
-  #productos .galeria p.price {
-    color: white;
-    padding-bottom: 15px;
-    background-color: white; }
-
 .pie {
-  /*padding*/
   text-align: center;
+  width: 80%;
+  height: 60%;
+  margin: 30px auto;
   padding: 50px auto;
-  height: 100%;
-  /****display flex****/
+  line-height: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .pie a {
-    text-decoration: none; }
 
 .pie__icon--sm {
-  /*size*/
-  width: 40px;
+  width: 20px;
   margin: 5px;
   display: flex;
-  flex-direction: flex-star; }
+  flex-direction: column;
+  align-items: center; }
 
-.pie__titulo--md {
-  font-size: 2rem; }
+@media (min-width: 768px) {
+  .pie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px; }
+    .pie h3 {
+      font-size: 2rem; }
+      .pie h3 h4 {
+        font-size: 1.5rem; }
+  .pie__icon--sm {
+    width: 35px; } }
+
+@media (min-width: 1200px) {
+  .promociones__section {
+    width: 80%;
+    height: 350px; }
+  .pie {
+    padding: 20px; }
+    .pie h3 {
+      font-size: 2.4rem; }
+      .pie h3 h4 {
+        font-size: 2.1rem; }
+  .pie__icon--sm {
+    width: 45px;
+    margin: 0px;
+    padding: 0px; } }
